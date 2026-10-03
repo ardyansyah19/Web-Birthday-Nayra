@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7d9df">
+  <title>Happy Birthday, Nayra ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}.cover{display:none!important}body.locked{overflow:auto!important}</style></noscript>
+</head>
+<body class="locked">
+
+  <div class="hearts" aria-hidden="true"></div>
+
+  <!-- Layar pembuka -->
+  <div class="cover" id="cover" role="dialog" aria-label="Pembuka">
+    <div class="cover-inner">
+      <div class="gift" aria-hidden="true">🎁</div>
+      <p class="section-kicker">Ada sesuatu untukmu</p>
+      <h2>Hai, Nayra ♡</h2>
+      <p class="cover-sub">Nyalakan suara kamu ya,<br>ada lagu kecil yang menemani.</p>
+      <button class="cover-btn" id="openBtn" type="button">Buka hadiahnya <span>♥</span></button>
+    </div>
+  </div>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <button class="music-btn" id="musicBtn" type="button" aria-label="Putar atau jeda musik" title="Musik">
+    <span class="music-icon">♪</span>
+  </button>
+  <audio id="bgm" src="song/selamat-ulang-tahun.mp3" loop preload="auto"></audio>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Tutup">×</button>
+    <img id="lightboxImg" alt="">
+  </div>
+
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+
+  <header class="hero">
+    <div class="hero-decoration">♡</div>
+    <p class="eyebrow">03 • 10 • 2026</p>
+    <h1>Happy Birthday,<br><span>Shesya Nayra Oktaviola</span></h1>
+    <p class="hero-subtitle">
+      Untuk perempuan yang membuat banyak hal sederhana<br class="desktop-only">
+      terasa jauh lebih berarti.
+    </p>
+    <a class="scroll-button" href="#memories">
+      <span>Buka untuk kamu</span>
+      <span class="arrow">↓</span>
+    </a>
+    <div class="hero-line"></div>
+  </header>
+
+  <main id="memories">
+
+    <section class="intro reveal">
+      <span class="small-heart">♥</span>
+      <p class="section-kicker">A little story about you</p>
+      <h2>Sepuluh foto,<br><em>sepuluh cerita.</em></h2>
+      <p>
+        Aku ingin menyimpan beberapa momen kita di sini.
+        Bukan karena foto-foto ini sempurna, tetapi karena
+        setiap foto punya cerita dan perasaan yang berbeda.
+      </p>
+    </section>
+
+    <section class="memory memory-left reveal">
+      <div class="photo-frame">
+        <div class="photo-number">01</div>
+        <div class="img-wrap"><img src="images/foto-01.jpg" width="1200" height="1200" loading="lazy" decoding="async" alt="Foto kenangan 01"></div>
+      </div>
+      <div class="memory-text">
+        <span class="memory-label">The beginning</span>
+        <h3>Hal kecil yang akhirnya menjadi begitu berarti.</h3>
+        <p>
+          Dari sekian banyak orang yang bisa aku temui,
+          aku bersyukur semesta mempertemukan aku dengan kamu.
+          Mungkin awalnya sederhana, tapi ternyata kehadiranmu
+          punya tempat yang istimewa di hidupku.
+        </p>
+      </div>
+    </section>
+
+    <section class="memory memory-right reveal">
+      <div class="memory-text">
+        <span class="memory-label">Your smile</span>
+        <h3>Senyummu selalu punya caranya sendiri.</h3>
+        <p>
+          Ada banyak hal yang bisa membuat hari menjadi lebih baik,
+          tapi salah satunya adalah melihat kamu tersenyum.
+          Semoga kamu selalu punya alasan untuk tersenyum,
+          bahkan pada hari-hari yang terasa berat.
+        </p>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-number">02</div>
+        <div class="img-wrap"><img src="images/foto-02.jpg" width="1200" height="1200" loading="lazy" decoding="async" alt="Foto kenangan 02"></div>
+      </div>
+    </section>
+
+    <section class="memory memory-left reveal">
+      <div class="photo-frame">
+        <div class="photo-number">03</div>
+        <div class="img-wrap"><img src="images/foto-03.jpg" width="1200" height="1200" loading="lazy" decoding="async" alt="Foto kenangan 03"></div>
+      </div>
+      <div class="memory-text">
+        <span class="memory-label">Little moments</span>
+        <h3>Aku suka hal-hal kecil tentang kita.</h3>
+        <p>
+          Bukan hanya momen besar yang ingin aku ingat.
+          Percakapan sederhana, bercanda tanpa alasan,
+          atau sekadar menghabiskan waktu bersama juga menjadi
+          bagian yang ingin aku simpan baik-baik.
+        </p>
+      </div>
+    </section>
+
+    <section class="memory memory-right reveal">
+      <div class="memory-text">
+        <span class="memory-label">Thank you</span>
+        <h3>Terima kasih sudah hadir.</h3>
+        <p>
+          Terima kasih karena sudah menjadi bagian dari hari-hariku.
+          Terima kasih untuk perhatian, kesabaran, cerita,
+          dan semua hal kecil yang mungkin tidak selalu sempat
+          aku ucapkan terima kasih.
+        </p>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-number">04</div>
+        <div class="img-wrap"><img src="images/foto-04.jpg" width="1200" height="1200" loading="lazy" decoding="async" alt="Foto kenangan 04"></div>
+      </div>
+    </section>
+
+    <section class="memory memory-left reveal">
+      <div class="photo-frame">
+        <div class="photo-number">05</div>
+        <div class="img-wrap"><img src="images/foto-05.jpg" width="1200" height="1200" loading="lazy" decoding="async" alt="Foto kenangan 05"></div>
+      </div>
+      <div class="memory-text">
+        <span class="memory-label">A special person</span>
+        <h3>Kamu tidak perlu menjadi sempurna.</h3>
+        <p>
+          Aku menyayangimu bukan karena kamu harus selalu baik-baik saja.
+          Kamu boleh lelah, boleh takut, boleh punya hari yang buruk.
+          Aku hanya berharap kamu tidak pernah lupa bahwa kamu berharga.
+        </p>
+      </div>
+    </section>
+
+    <section class="memory memory-right reveal">
+      <div class="memory-text">
+        <span class="memory-label">Growing together</span>
+        <h3>Semoga kita terus bertumbuh.</h3>
+        <p>
+          Semoga seiring waktu berjalan, kita bukan hanya semakin dekat,
+          tetapi juga semakin dewasa dalam memahami, menghargai,
+          dan menjaga satu sama lain.
+        </p>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-number">06</div>
+        <div class="img-wrap"><img src="images/foto-06.jpg" width="1200" height="1200" loading="lazy" decoding="async" alt="Foto kenangan 06"></div>
+      </div>
+    </section>
+
+    <section class="memory memory-left reveal">
+      <div class="photo-frame">
+        <div class="photo-number">07</div>
+        <div class="img-wrap"><img src="images/foto-07.jpg" width="1200" height="1200" loading="lazy" decoding="async" alt="Foto kenangan 07"></div>
+      </div>
+      <div class="memory-text">
+        <span class="memory-label">My wish</span>
+        <h3>Doaku sederhana, tapi sungguh-sungguh.</h3>
+        <p>
+          Semoga kamu selalu diberi kesehatan, umur yang panjang,
+          hati yang tenang, rezeki yang luas, dan keberanian untuk
+          mengejar semua impianmu. Semoga setiap langkahmu
+          dipertemukan dengan banyak hal baik.
+        </p>
+      </div>
+    </section>
+
+    <section class="memory memory-right reveal">
+      <div class="memory-text">
+        <span class="memory-label">Your future</span>
+        <h3>Semoga semua yang kamu impikan menemukan jalannya.</h3>
+        <p>
+          Aku ingin melihat kamu tumbuh menjadi versi dirimu yang
+          paling bahagia. Jangan takut bermimpi besar.
+          Kalau suatu hari kamu merasa ragu, semoga kamu ingat
+          bahwa ada seseorang yang selalu percaya pada kamu.
+        </p>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-number">08</div>
+        <div class="img-wrap"><img src="images/foto-08.jpg" width="1200" height="1200" loading="lazy" decoding="async" alt="Foto kenangan 08"></div>
+      </div>
+    </section>
+
+    <section class="memory memory-left reveal">
+      <div class="photo-frame">
+        <div class="photo-number">09</div>
+        <div class="img-wrap"><img src="images/foto-09.jpg" width="1200" height="1200" loading="lazy" decoding="async" alt="Foto kenangan 09"></div>
+      </div>
+      <div class="memory-text">
+        <span class="memory-label">Us</span>
+        <h3>Masih banyak cerita yang ingin aku tulis bersama kamu.</h3>
+        <p>
+          Sepuluh foto ini tentu tidak cukup untuk menceritakan semuanya.
+          Masih ada banyak tempat, tawa, perjalanan, dan kenangan
+          yang semoga suatu hari bisa kita tambahkan ke dalam cerita kita.
+        </p>
+      </div>
+    </section>
+
+    <section class="memory memory-right reveal">
+      <div class="memory-text">
+        <span class="memory-label">Always</span>
+        <h3>Kalau boleh berharap...</h3>
+        <p>
+          Aku berharap di antara banyak perubahan yang akan datang,
+          kita tetap menemukan alasan untuk saling memilih,
+          saling mendukung, dan saling mendoakan.
+          Karena bersamamu, aku ingin terus membuat kenangan baru.
+        </p>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-number">10</div>
+        <div class="img-wrap"><img src="images/foto-10.jpg" width="1200" height="1200" loading="lazy" decoding="async" alt="Foto kenangan 10"></div>
+      </div>
+    </section>
+
+    <section class="birthday-letter reveal">
+      <div class="letter-card">
+        <div class="letter-top">♡</div>
+        <p class="section-kicker">A letter for you</p>
+        <h2>Untuk Nayra,</h2>
+
+        <div class="letter-content">
+          <p>
+            Selamat ulang tahun, sayang. ❤️
+          </p>
+          <p>
+            Hari ini adalah tentang kamu. Tentang bertambahnya satu tahun
+            dalam perjalanan hidupmu, tentang semua hal yang sudah kamu
+            lewati, dan tentang semua hal indah yang masih menunggumu
+            di depan sana.
+          </p>
+          <p>
+            Aku tidak tahu apakah kata-kata yang aku tulis di sini sudah
+            cukup untuk menggambarkan betapa berartinya kamu buat aku.
+            Tapi aku ingin kamu tahu satu hal: aku bersyukur kamu hadir
+            dalam hidupku.
+          </p>
+          <p>
+            Di umurmu yang baru ini, aku berdoa semoga kamu selalu sehat,
+            bahagia, dimudahkan dalam segala urusan, dikelilingi orang-orang
+            yang tulus menyayangimu, dan diberikan kekuatan untuk melewati
+            setiap tantangan yang datang.
+          </p>
+          <p>
+            Kejar apa yang kamu impikan. Jangan terlalu keras kepada dirimu
+            sendiri. Kamu sudah melakukan banyak hal hebat sampai hari ini.
+            Dan ketika suatu hari kamu merasa semuanya terlalu berat,
+            semoga kamu ingat bahwa kamu tidak harus selalu menghadapi
+            semuanya sendirian.
+          </p>
+          <p>
+            Aku juga berharap kita masih punya banyak waktu untuk membuat
+            cerita baru. Lebih banyak foto, lebih banyak tawa, lebih banyak
+            perjalanan, dan lebih banyak momen sederhana yang nantinya
+            bisa kita lihat kembali sambil tersenyum.
+          </p>
+          <p>
+            Terima kasih sudah menjadi Nayra yang aku kenal.
+            Tetaplah menjadi dirimu sendiri, karena justru itu yang membuat
+            kamu begitu spesial.
+          </p>
+          <p class="signature">
+            Happy Birthday, Nayra. ❤️<br>
+            Semoga hari ini, besok, dan hari-hari setelahnya<br>
+            selalu membawa kebahagiaan untukmu.
+          </p>
+        </div>
+
+        <div class="letter-bottom">With love, always ♡</div>
+      </div>
+    </section>
+
+    <section class="final reveal">
+      <div class="final-heart">♥</div>
+      <p>03.10.2026</p>
+      <h2>Happy Birthday,<br><em>Nayra.</em></h2>
+      <span>Semoga semua doa baik menemukan jalannya kepadamu.</span>
+    </section>
+
+  </main>
+
+  <footer>
+    <button class="replay" id="toTop" type="button">↑ Kembali ke atas</button>
+    <p>Made with love for Shesya Nayra Oktaviola ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
